@@ -2,3 +2,65 @@
     --dark-green : #064E3B;
     --faint-green: #A7F3D0;
 }
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.section{
+    width: 100%;
+    max-width: 300px;
+    min-height: 200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--dark-green);}
+    h1,p{
+        color: white;
+    }
+    .label{
+        color: var(--faint-green);
+        padding:1.5rem 1 rem 0.5rem ;
+        font-size: 1 rem;
+    }
+input{
+    width: 100%;
+    padding: 1rem;
+    height: 10px;
+    display: block;
+}
+button{
+    padding: 0.09rem 1rem;
+    display: block;
+    font-size: 1rem;
+    border: none;
+    margin: 1rem auto 0;
+    background-color: var(--faint-green);
+    font-weight: bold;
+}
+.cashGivenInput{
+    display: none;
+}
+.changeReturn{
+    display: none;
+}
+.errorMsg{
+    padding-top: 1rem;
+    color: white;
+}
+#output{
+    margin: 1rem 0;
+}
+#output table,th,td{
+    padding: 0.2rem;
+    color: var(--dark-green);
+    background-color:var(--faint-green);
+    border: 2px solid var(--dark-green) ;
+    border-collapse: collapse;
+}
+.noOfNotes{
+    background-color:white;
+    font-weight: bold;
+}
