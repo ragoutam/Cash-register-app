@@ -56,15 +56,15 @@ checkBtn.addEventListener("click", () => {
 
 
 // function to calculate no. of notes to be given
-function calculateNotes(bill,cash){
-    let returnAmt=cash-bill;
-    if (returnAmt<1){
+function calculateNotes(bill, cash) {
+    let returnAmt = cash - bill;
+    if (returnAmt < 1) {
         showError("Don't return anything!")
-        return; 
+        return;
     }
-    changeReturn.style.display="block";
-    for (i=0;i<arrayNoteAmt.length;i++){
-      returnAmt=compare(returnAmt,arrayNoteAmt[i],i)
+    changeReturn.style.display = "block";
+    for (i = 0; i < arrayNoteAmt.length; i++) {
+        returnAmt = compare(returnAmt, arrayNoteAmt[i], i)
 
     }
 
@@ -72,14 +72,14 @@ function calculateNotes(bill,cash){
 
 
 //compare with currency and post the no. of notes on screen
-function compare(remainder,note,index){
-  if(remainder>=note){
-      let notes=Math.floor(remainder/note);
-      remainder=remainder-notes*note;
-      noOfNotes[index].innerText=`${notes}`
+function compare(remainder, note, index) {
+    if (remainder >= note) {
+        let notes = Math.floor(remainder / note);
+        remainder = remainder - notes * note;
+        noOfNotes[index].innerText = `${notes}`
 
-  }
-  return remainder
+    }
+    return remainder
 
 }
 
