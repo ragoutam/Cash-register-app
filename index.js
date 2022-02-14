@@ -64,7 +64,7 @@ function calculateNotes(bill,cash){
     }
     changeReturn.style.display="block";
     for (i=0;i<arrayNoteAmt.length;i++){
-compare(returnAmt,arrayNoteAmt[i],i)
+      returnAmt=compare(returnAmt,arrayNoteAmt[i],i)
 
     }
 
