@@ -65,3 +65,21 @@ button{
     background-color:white;
     font-weight: bold;
 }
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-section{
+    height: 45px;
+    width: 493px;
+    background-color: #064E3B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h1{
+    color: black;
+    color: #A7F3D0;
+    text-align: center;
+}
